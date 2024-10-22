@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
         co2 = tracers_nc.createVariable("co2", "f4", ("zt"), fill_value=0.0)
         co2.long_name = "carbon dioxide"
-        co2.unit = "kg/kg"
+        co2.unit = "ppm"
         co2.molar_mass = 44.009
         co2.lemis = 1
         co2.lags = 1
@@ -38,7 +38,7 @@ if __name__ == "__main__":
         nh3 = tracers_nc.createVariable("nh3", "f4", ("zt"), fill_value=0.0)
         nh3.long_name = "ammonia"
         nh3.unit = "ppb"
-        nh3.molar_nass = 17.031
+        nh3.molar_mass = 17.031
         nh3.lemis = 1
         nh3.ldep = 1
         nh3[:] = 0.0
